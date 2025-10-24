@@ -7,7 +7,7 @@ status division(Dlist **head1, Dlist **tail1, Dlist **head2, Dlist **tail2, Dlis
     status result = check_greater(*head1, *tail1, *head2, *tail2), quotient = 0;
 
     // Check for division by zero
-    if ((*head2)->data == 0 && (*head2)->next == NULL) 
+    if ((*head2)->data == 0 && (*head2)->next == NULL && (*head1)->data) 
     {
         printf("Division by zero is infinite\n");
         return failure;
@@ -44,7 +44,7 @@ status division(Dlist **head1, Dlist **tail1, Dlist **head2, Dlist **tail2, Dlis
         quotient = 0;
 
     // if both numbers are equal, quotient is 1
-    else if(result == equal)
+    else if(result == equal  && ((*head1)->data != 0)))
         quotient++;
 
     if((*headR = malloc(sizeof(Dlist))) == NULL)
