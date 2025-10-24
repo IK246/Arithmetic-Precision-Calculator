@@ -1,5 +1,5 @@
-a.out: main.o addition.o subtraction.o multiplication.o division.o operation.o
-	gcc -o a.out main.o addition.o subtraction.o multiplication.o division.o operation.o
+compile.out: main.o addition.o subtraction.o multiplication.o division.o operation.o
+	gcc -o compile.out main.o addition.o subtraction.o multiplication.o division.o operation.o
 main.o: main.c
 	gcc -c main.c
 addition.o: addition.c
