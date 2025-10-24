@@ -13,4 +13,4 @@ division.o: division.c
 operation.o: operation.c
 	gcc -c operation.c
 clean:
-	rm *.o a.out
+	rm *.o *.out
